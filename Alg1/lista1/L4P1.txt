@@ -1,0 +1,130 @@
+1-
+#include <stdio.h>
+
+int main() {
+    double salario = 5000.00; // Salário inicial em 2000
+    double aumento = 0.015;   // Aumento de 1,5% em 2021
+    int ano;
+
+    // Aplicar aumento de 1,5% em 2021
+    for (ano = 2000; ano <= 2021; ano++) {
+        if (ano == 2021) {
+            salario += salario * aumento;
+        }
+    }
+
+    // Aplicar aumentos a partir de 2022
+    for (ano = 2022; ano <= 2024; ano++) {
+        aumento *= 2; // Dobrar o percentual de aumento a cada ano
+        salario += salario * aumento;
+    }
+
+    printf("O salário atual do funcionário em 2024 é: R$%.2f\n", salario);
+
+    return 0;
+}
+
+
+
+
+2-
+
+#include <stdio.h>
+
+int main() {
+    int aluno, r = 0, e = 0, a = 0;
+    float notaa, notab, media, mediac = 0;
+
+    for (aluno = 0; aluno < 6; aluno++) {
+        printf("\nDigite a nota a do aluno %d: ", aluno + 1);
+        scanf("%f", &notaa); 
+        printf("Digite a nota b do aluno %d: ", aluno + 1);
+        scanf("%f", &notab);
+
+        media = (notaa + notab) / 2;
+        mediac += media;
+
+        printf("A media do aluno eh: %.2f\n", media); 
+        if (media <= 3) {
+            printf("Reprovado\n");
+            r++;
+        } else if (media > 3.0 && media <= 7.0) {
+            printf("Exame\n");
+            e++;
+        } else {
+            printf("Aprovado\n");
+            a++;
+        }
+    }
+
+    mediac /= 6;
+    printf("\nA media da sala eh: %.2f\n", mediac); 
+    printf("A quantidade de aprovados eh: %d\n", a);
+    printf("A quantidade de exame eh: %d\n", e);
+    printf("A quantidade de reprovados eh: %d\n", r);
+
+    return 0;
+}
+
+
+
+
+3-
+
+#include <stdio.h>
+
+int main() {
+int n=0,i,j, numero, fatorial = 1;
+
+printf("\nDigite N\n");
+scanf("%d",&n);
+n-=1;
+for (i = 0; i<=n; i++)
+{
+	printf("\nDigite um numero:\n");
+	scanf("%d",&numero);
+	printf("\nFaltam %d",n-i, " numeros a serem digitados");
+	for (int j = 1; j <= numero; j++) {
+            fatorial *= j; 
+            printf("\n%d\n", fatorial);
+        }
+ } 
+    return 0;
+}
+
+
+
+4 - 
+
+#include <stdio.h>
+
+int main() {
+int i, qtdVeiculos, acidentes, maior, menor, maiorc, menorc, mediaP, cal, media;
+for(i=1; i<=5; i++){
+	printf("\n Codigo da cidade: %d \n", i);
+	printf("\n Quantidade de veiculos: \n");
+	scanf("%d",& qtdVeiculos);
+	printf("\n Numero de acidentes com vitimas: \n");
+	scanf("%d",& acidentes);
+	if (acidentes> maior){
+		maior=acidentes;
+		maiorc=i;
+	}	
+	if (acidentes< menor){
+		menor=acidentes;
+		menorc=i;
+	}
+	media = media + qtdVeiculos;
+	if(qtdVeiculos<2000){
+		mediaP = mediaP + acidentes;
+		cal++;
+	}
+}
+printf("\n O menor indice de acidente eh de %d e pertence a %d \n", menor, menorc);
+printf("\n O maior indice de acidente eh de %d e pertence a %d \n", maior, maiorc);
+printf("\n A media de veiculos nas 5 cidade eh %d \n", media/5);
+printf("\n a media de acidentes em cidades com menos de 2000 veiculos é %d \n", mediaP/cal);
+
+    return 0;
+}
+

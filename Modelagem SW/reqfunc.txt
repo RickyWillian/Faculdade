@@ -1,0 +1,57 @@
+1. Requisitos Funcionais (o que o sistema deve fazer)
+-Cadastro e Gerenciamento de Sócios
+	O sistema deve permitir o cadastro de sócios (pilotos, instrutores e alunos de pilotagem).
+
+-O sistema deve armazenar e gerenciar as seguintes informações de um sócio:
+
+	Número de matrícula (identificador único)
+
+	Nome, endereço e idade
+
+-O sistema deve permitir a diferenciação entre:
+
+	Pilotos, que devem ter um número de brevê único.
+
+	Instrutores, que devem possuir informações adicionais: nome do curso de formação, data do diploma e instituição.
+
+	Alunos de pilotagem, que devem ter o histórico de voos armazenado.
+
+-Gerenciamento de Voos e Horas de Voo
+-O sistema deve registrar cada saída de voo realizada por um aluno, contendo:
+
+	Data do voo
+
+	Instrutor responsável
+
+	Hora de saída e chegada
+
+	Parecer do instrutor sobre o voo
+
+-O sistema deve calcular e armazenar o total de horas de voo de cada aluno.
+
+Emissão do Brevê
+-O sistema deve verificar se o aluno atingiu o número mínimo de horas de voo exigidas.
+
+-O sistema deve consolidar os pareceres dos instrutores para avaliar se o aluno desenvolveu as habilidades necessárias.
+
+-O sistema deve permitir a emissão do brevê para alunos que atendam aos requisitos.
+
+2. Requisitos Não Funcionais (qualidade do sistema)
+O sistema deve ser acessível via navegador web para facilitar o uso pelos sócios do aeroclube.
+
+-O sistema deve armazenar os dados de forma segura, garantindo proteção contra acessos não autorizados.
+
+-O tempo de resposta para consultas de voos e horas de voo deve ser inferior a 2 segundos.
+
+-O sistema deve gerar relatórios de voos e progresso dos alunos.
+
+3. Regras de Negócio (restrições e regras específicas do aeroclube)
+-Apenas pilotos podem se tornar instrutores.
+
+-Um aluno só pode obter o brevê se tiver completado o número mínimo de horas de voo exigidas.
+
+-Todos os voos de um aluno devem ter um instrutor registrado.
+
+-O parecer do instrutor é obrigatório para cada voo registrado.
+
+-A escola só ministra cursos básicos, ou seja, não há alunos em cursos avançados.

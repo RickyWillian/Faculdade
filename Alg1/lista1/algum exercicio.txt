@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+int main() {
+    int i, j, idade, dmenor; // Corrigido o ponto e vírgula no final de dmenor
+    // As variáveis ITUM, ITDOIS, ITTRES, ITQUATRO, ITCINCO não foram inicializadas, o que pode causar comportamento indefinido
+    int ITUM = 0, ITDOIS = 0, ITTRES = 0, ITQUATRO = 0, ITCINCO = 0; // Inicialização das variáveis
+    float peso, altura, mediaa = 0, pesototal = 0; // Inicialização das variáveis
+    // A variável pesototal deveria ser do tipo inteiro ou deveria ser inicializada corretamente
+    // O tipo de 'peso' é float, mas na leitura scanf deve-se usar %f
+    for(j = 0; j < 5; j++) { // Corrigido j=<4 para j<5
+        printf("\n ******TIME %d****** %d \n", j + 1);
+        for(i = 0; i < 11; i++) { // Corrigido i <= 10 para i < 11
+            printf("\n Digite o peso do jogador %d \n", i + 1);
+            scanf("%f", &peso); // Corrigido para usar %f
+            // Removido o parêntese extra no if
+            if(peso > 80) // Removido o parêntese extra
+                pesototal++; // A contagem deve ser feita corretamente
+            printf("\n Digite a idade do jogador %d \n", i + 1);
+            scanf("%d", &idade);
+            if (idade < 18) {
+                dmenor++;	
+            }
+            // Usar == para comparação, não = que é atribuição
+            if (j + 1 == 1) // Corrigido = para ==
+                ITUM += idade;
+            if (j + 1 == 2) // Corrigido = para ==
+                ITDOIS += idade;
+            if (j + 1 == 3) // Corrigido = para ==
+                ITTRES += idade;
+            if (j + 1 == 4) // Corrigido = para ==
+                ITQUATRO += idade;
+            if (j + 1 == 5) // Corrigido = para ==
+                ITCINCO += idade;
+
+            printf("\n Digite a altura do jogador %d \n", i + 1);
+            scanf("%f", &altura); // Corrigido para usar %f
+            mediaa += altura; // A soma deve ser acumulativa
+        }
+        printf("\n A quantidade de jogadores menores de 18 é %d \n", dmenor);
+        printf("\n A média de idade do time 1 é %.2f \n", ITUM / 11.0); // Mudança para .2f para média correta
+        printf("\n A média de idade do time 2 é %.2f \n", ITDOIS / 11.0); // Mudança para .2f para média correta
+        printf("\n A média de idade do time 3 é %.2f \n", ITTRES / 11.0); // Mudança para .2f para média correta
+        printf("\n A média de idade do time 4 é %.2f \n", ITQUATRO / 11.0); // Mudança para .2f para média correta
+        printf("\n A média de idade do time 5 é %.2f \n", ITCINCO / 11.0); // Mudança para .2f para média correta
+        printf("\n A média de altura de todos os jogadores é %.2f \n", mediaa / 55.0); // Mudança para .2f para média correta
+        printf("\n A porcentagem de jogadores com mais de 80kg é %.2f \n", (pesototal * 100) / 55.0); // Mudança para .2f para porcentagem correta
+    }
+    return 0;
+}

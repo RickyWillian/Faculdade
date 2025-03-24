@@ -1,0 +1,68 @@
+lista 1 ex 2
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(int argc, char *argv[]) {
+	
+	int a = 10, *pa;
+	double b= 5.0, *pb;
+	char c = 'v', *pc;
+	
+	pa= &a;
+	pc= &c;
+	pb= &b;
+	
+	printf("\nA = %d", a);
+	printf("\nB = %f", b);
+	printf("\nC = %c", c);
+	
+	*pa = 50;
+	*pb = 5.5;
+	*pc = 'f';
+	
+	printf("\nA = %d", a);
+	printf("\nB = %f", b);
+	printf("\nC = %c", c);
+	
+	return 0;
+}
+
+
+**********************************************
+lista 1 ex3
+
+int main(int argc, char *argv[]) {
+	
+	int a, b;
+	printf ("\n Endereço de A %u", &a);
+	printf ("\n Endereço de B %u", &b);
+	
+	if (&a>&b)
+		printf("\no maior é o endereço de A");
+	else
+		printf("\no maior endereço é o de B");
+	return 0;
+}
+
+
+***************************************************
+
+lista 1 ex4
+
+int main(int argc, char *argv[]) {
+	
+	int a=10, b=20;
+	printf ("\n Endereço de A %u", &a);
+	printf ("\n Endereço de B %u", &b);
+	
+	if (&a>&b)
+		printf("\no maior é o endereço de A que contem %d", a);
+	else
+		printf("\no maior endereço é o de B que contem %d", b);
+	return 0;
+}
+
+***************************************************
+lista 1 ex5
+
