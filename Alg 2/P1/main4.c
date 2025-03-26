@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+//Exercicio cadastra o número de funcionarios desejado pelo usúario, com a utilização de alocação dinamica de estruturas e retorna o maior salário cadastrado
 struct data{
 	int dia, mes, ano;
 };

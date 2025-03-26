@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-
+//Exercicio aloca tres matrizes de forma dinamica e preenche as duas primeiras com dados aletórios e terceira com a soma das duas primeiras.
 
 int main(int argc, char *argv[]) {
 
