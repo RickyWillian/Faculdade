@@ -1,0 +1,15 @@
+São Paulo                               12396372
+Rio de Janeiro                          6775561
+Belo Horizonte                          2521564
+Brasília                                3055149
+Salvador                                2886698
+Fortaleza                               2703391
+Curitiba                                1963726
+Manaus                                  2219580
+Recife                                  1653461
+Porto Alegre                            1488252
+Goiânia                                 1555626
+Belém                                   1499641
+Campinas                                1223237
+São Luís                                1108975
+Maceió                                  1029129

@@ -1,0 +1,10 @@
+Nome: João Silva, Idade: 34 
+Nome: Maria Souza, Idade: 40 
+Nome: Pedro Oliveira, Idade: 23 
+Nome: Ana Paula, Idade: 26 
+Nome: Carlos Alberto, Idade: 45 
+Nome: Sofia Mendes, Idade: 20 
+Nome: Lucas Ferreira, Idade: 31 
+Nome: Isabela Rocha, Idade: 36 
+Nome: Gustavo Pereira, Idade: 22 
+Nome: Beatriz Costa, Idade: 29 
